@@ -13,6 +13,7 @@
 		33BA1F2C23A301850029DE78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33BA1F2B23A301850029DE78 /* Assets.xcassets */; };
 		33BA1F2F23A301850029DE78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33BA1F2D23A301850029DE78 /* LaunchScreen.storyboard */; };
 		33DDCFED23A33E6E00FF0E32 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33DDCFEC23A33E6E00FF0E32 /* GoogleService-Info.plist */; };
+		33E9F0FE23A35D5B00508D6E /* CacheImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E9F0FD23A35D5B00508D6E /* CacheImages.swift */; };
 		B0FC8D7C8A6B2A780E6E0573 /* Pods_romanisme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4C993B6E656E349E518627 /* Pods_romanisme.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		33BA1F2E23A301850029DE78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33BA1F3023A301850029DE78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33DDCFEC23A33E6E00FF0E32 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		33E9F0FD23A35D5B00508D6E /* CacheImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheImages.swift; sourceTree = "<group>"; };
 		859A0EEF94B46559EB38A256 /* Pods-romanisme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-romanisme.release.xcconfig"; path = "Target Support Files/Pods-romanisme/Pods-romanisme.release.xcconfig"; sourceTree = "<group>"; };
 		B03396FFCE0243A49B1A8BEC /* Pods-romanisme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-romanisme.debug.xcconfig"; path = "Target Support Files/Pods-romanisme/Pods-romanisme.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +91,7 @@
 		33E9F0F923A3595400508D6E /* helpers */ = {
 			isa = PBXGroup;
 			children = (
+				33E9F0FD23A35D5B00508D6E /* CacheImages.swift */,
 			);
 			path = helpers;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				TargetAttributes = {
 					33BA1F1B23A301840029DE78 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -248,6 +252,7 @@
 			files = (
 				33BA1F2423A301840029DE78 /* LoadingController.swift in Sources */,
 				33BA1F2A23A301840029DE78 /* romanisme.xcdatamodeld in Sources */,
+				33E9F0FE23A35D5B00508D6E /* CacheImages.swift in Sources */,
 				33BA1F2023A301840029DE78 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
