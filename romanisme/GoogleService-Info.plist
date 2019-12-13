@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>832881729412-lv4limcrm1knhf0tn5at04eq95u52jqo.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.832881729412-lv4limcrm1knhf0tn5at04eq95u52jqo</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA5caCcFE2DF8dX-q5n2zofnhHzTqPXlhk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>832881729412</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>io.devlex.romanisme</string>
+	<key>PROJECT_ID</key>
+	<string>romanisme-5b8c0</string>
+	<key>STORAGE_BUCKET</key>
+	<string>romanisme-5b8c0.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:832881729412:ios:871cf5e5c99977255d47d1</string>
+	<key>DATABASE_URL</key>
+	<string>https://romanisme-5b8c0.firebaseio.com</string>
+</dict>
+</plist>
