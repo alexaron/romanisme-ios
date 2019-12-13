@@ -63,6 +63,11 @@
 		33BA1F1E23A301840029DE78 /* romanisme */ = {
 			isa = PBXGroup;
 			children = (
+				33E9F0F923A3595400508D6E /* helpers */,
+				33E9F0FC23A359A400508D6E /* services */,
+				33E9F0FB23A3599100508D6E /* extensions */,
+				33E9F0FA23A3597600508D6E /* views */,
+				33E9F0F823A3594600508D6E /* controllers */,
 				33BA1F1F23A301840029DE78 /* AppDelegate.swift */,
 				33BA1F2323A301840029DE78 /* LoadingController.swift */,
 				33BA1F2B23A301850029DE78 /* Assets.xcassets */,
@@ -72,6 +77,41 @@
 				33BA1F2823A301840029DE78 /* romanisme.xcdatamodeld */,
 			);
 			path = romanisme;
+			sourceTree = "<group>";
+		};
+		33E9F0F823A3594600508D6E /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		33E9F0F923A3595400508D6E /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		33E9F0FA23A3597600508D6E /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		33E9F0FB23A3599100508D6E /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		33E9F0FC23A359A400508D6E /* services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = services;
 			sourceTree = "<group>";
 		};
 		766544FFDFC7F7013D726513 /* Pods */ = {
