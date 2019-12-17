@@ -15,6 +15,6 @@ target 'romanisme' do
   pod 'RevealingSplashView'
   source 'https://github.com/CocoaPods/Specs.git'
   pod 'PhoneNumberKit', '~> 3.0'
-
+  pod 'LBTAComponents'
 end
 

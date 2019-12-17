@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Firestore.firestore().settings = settings
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = LoadingController()
+        window?.rootViewController = RootViewController()
         window?.makeKeyAndVisible()
         return true
     }
@@ -51,6 +51,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        // Pass device token to auth
+        Auth.auth().setAPNSToken(deviceToken, type: AuthAPNSTokenType.prod)
+    }
+
+    func application(_ application: UIApplication, didReceiveRemoteNotification notification: [AnyHashable: Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        if Auth.auth().canHandleNotification(notification) {
+            completionHandler(UIBackgroundFetchResult.noData)
+            return
+        }
+    }
+
+    func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any]) -> Bool {
+        if Auth.auth().canHandle(url) {
+            return true
+        }
+        return false
     }
 
 
@@ -99,5 +118,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+}
+
+extension AppDelegate {
+    static var shared: AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
+    var rootViewController: RootViewController {
+        return window!.rootViewController as! RootViewController
+    }
+    var currentUser: User? {
+        return Auth.auth().currentUser
+    }
 }
 
